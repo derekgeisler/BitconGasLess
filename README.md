@@ -18,7 +18,9 @@ Install the bitcoinlib library:
 
 
 Explanation
+
 Create and Send Transaction:
+
 Load the sender's wallet.
 Create a transaction with inputs and outputs.
 Sign the transaction with the sender’s private key.
@@ -26,7 +28,9 @@ Broadcast the transaction using a Bitcoin Core node, which effectively sponsors 
 Service Integration:
 Use the Bitcoin Core sendrawtransaction RPC call to broadcast the transaction.
 The sponsor's Bitcoin Core node covers the fee for the transaction.
+
 Important Considerations
+
 Security: Never expose private keys in your code. This script uses a simplified approach for demonstration. In a real-world scenario, private keys should be managed securely.
 Fee Management: The fee calculation and management should be handled dynamically based on network conditions.
 Bitcoin Core Configuration: Ensure your Bitcoin Core node is properly configured to accept RPC requests.
